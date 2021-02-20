@@ -178,9 +178,10 @@ margin-top: 60px;
     background: linear-gradient(119.87deg, #01B3E3 12.2%, #60D3AA 55.01%);
     border-radius: 8px;
     margin-left: 540px;
+     border: none;
     margin-top: 5px;
     color: #fff;
-    border: none;
+    
     /*font-size: 25px;*/
     /*font-family: Josefin Sans;*/
     font-style: normal;
