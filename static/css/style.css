@@ -275,9 +275,9 @@ color: #2B2B2B;
 }
 .phn-1 img{
     
-    margin-top: -194px;
+    margin-top:-280px;
     margin-left: 89px;
-    width: 220px;
+    /*width: 220px;*/
 }
 
 .head-1 h4{
@@ -377,14 +377,14 @@ color: #282828;
     /*background: url(images/651.png) no-repeat;*/
     
     margin-top: -250px;
-    margin-left: 760px;
+    margin-left: 780px;
     height: 330px;
     background-size: 440px;
 }
 .phn-2 img{
     
     margin-top: -280px;
-    padding-left: 70px;
+    padding-left: 88px;
 }
 .seventh-sec{
     
@@ -445,9 +445,9 @@ background: #60D3AA;
 }
 .phn-3 img{
     
-    margin-top: -194px;
+    margin-top:-271px;
     margin-left: 89px;
-    width: 220px;
+    /*width: 220px;*/
 }
 .head-3{
     
@@ -594,8 +594,7 @@ color: #01B3E3;
 
 }
 .blog-2 img{
-
-    border-radius: 13px;
+    border-radius: 0px;
 }
 .blog-2 p{
 width: 301px;
