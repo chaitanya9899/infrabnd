@@ -4,7 +4,10 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
 	<title>Your Website</title>
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -17,23 +20,30 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+<!-- <link href="static/css/style.css" rel="stylesheet"> -->
+<!-- <link href="static/bootstrap-4.0.0-dist/css/bootstrap.min.css" rel="stylesheet"> -->
+<!-- <link href="static/bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.0.0-dist/css/bootstrap.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.0.0-dist/css/bootstrap.min.css') }}">
 </head>
-    <div class="container-fluid first-sec">
-        <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 logo">
-            <img src="{{ url_for('static', filename='images/InfaBrands.png') }}" alt="">
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Blog</a></li>
-                     <li><a href="#">Contact us</a></li>
-                </ul> 
-            </div>
-        </div>
+    <header id="header" class="fixed-top " style="background-color: #FFF;">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><img src="{{ url_for('static', filename='images/InfaBrands.png') }}" alt=""><a href="index.html"></a></h1>
+     
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+          <li ><a href="#team">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+          
+        </ul>
+      </nav><!-- .nav-menu -->
+
     </div>
+  </header><!-- End Header -->
+
 <!------------------------------------------------------>
 <div class="container-fluid second-sec" style="background-image: url('/static/images/43 1.png');">
     <div class="row">
@@ -42,12 +52,12 @@
         </div>
          <div class="social-icons">  
               <a href="#" class="img_1">
-                <img src="{{ url_for('static', filename='images/Group 636.png') }}" alt="">
-                <!-- <img src="images/Group 636.png" alt="" /> -->
+                <img src="{{ url_for('static', filename='images/Group 636.png') }}" alt=""> 
+                <!-- <img src="static/images/Group 636.png" alt="" /> -->
               </a>
               <a href="#" class="img_2">
                 <img src="{{ url_for('static', filename='images/Group 634.png') }}" alt="">
-                <!-- <img src="images/Group 634.png" alt="" /> -->
+                <!-- <img src="static/images/Group 634.png" alt="" /> -->
               </a>
           </div>
 </div>
@@ -78,7 +88,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bdr">
            <img src="{{ url_for('static', filename='images/Rectangle 259.png') }}" alt="">
-            <!-- <img src="images/Rectangle%20259.png" alt=""> -->
+            <!-- <img src="static/images/Rectangle 259.png" alt="">  -->
     </div>
     </div>
     </div>
@@ -89,7 +99,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 phn-1" style="background-image: url('/static/images/Group6.png'); background-repeat: no-repeat;">
           <img src="{{ url_for('static', filename='images/1576 3.png') }}" alt="">
 
-            <!-- <img src="images/1576%203.png" src=""> -->
+          <!-- <img src="static/images/1576%203.png" src=""> -->
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 head-1">
             <h4>Easy Filteration</h4>
@@ -98,7 +108,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dot-1">
               <img src="{{ url_for('static', filename='images/Group 669.png') }}" alt="">
 
-            <!-- <img src="images/Group%20669.png" alt=""> -->
+            <!-- <img src="static/images/Group%20669.png" alt=""> -->
             </div>
         </div>
         </div>
@@ -110,7 +120,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dot-2">
               <img src="{{ url_for('static', filename='images/Group 672.png') }}" alt="">
 
-            <!-- <img src="images/Group%20672.png" alt=""> -->
+            <!-- <img src="static/images/Group%20672.png" alt=""> -->
         </div>
             </div>
        <div class="container" id="bor">
@@ -120,8 +130,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod. Lorem ipsum <br> dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 phn-2" style="background-image: url('/static/images/651.png'); background-repeat: no-repeat;">
-          <img src="{{ url_for('static', filename='images/homepage.png') }}" alt="">
-            <!-- <img src="images/homepage.png"> -->
+            <img src="{{ url_for('static', filename='images/homepage.png') }}" alt="">
+            <!-- <img src="static/images/homepage.png"> -->
         </div>
             </div>
             </div>
@@ -134,7 +144,7 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 bdr-1">
           <img src="{{ url_for('static', filename='images/Rectangle 259.png') }}" alt="">
-            <!-- <img src="images/Rectangle%20260.png" alt=""> -->
+          <!-- <img src="static/images/Rectangle%20260.png" alt=""> -->
     </div>
     </div>
     </div>
@@ -145,15 +155,15 @@
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 phn-3" style="background-image: url('/static/images/Group6.png');">
           <img src="{{ url_for('static', filename='images/mockup.png') }}" alt="">
-            <!-- <img src="images/mockup.png"src=""> -->
+          <!-- <img src="static/images/mockup.png"src=""> -->
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 head-3">
             <h4>Bidding Option</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dot-3">
-          <img src="{{ url_for('static', filename='images/Group 669.png') }}" alt="">
-            <!-- <img src="images/Group%20669.png" alt=""> -->
+            <img src="{{ url_for('static', filename='images/Group 669.png') }}" alt="">
+            <!-- <img src="static/images/Group%20669.png" alt=""> -->
         </div>
         </div>
     </div>
@@ -162,8 +172,8 @@
          <div class="container-fluid ninth-sec">
             <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 dot-4">
-              <img src="{{ url_for('static', filename='images/Group 672.png') }}" alt="">
-            <!-- <img src="images/Group%20672.png" alt=""> -->
+            <img src="{{ url_for('static', filename='images/Group 672.png') }}" alt="">
+            <!-- <img src="static/images/Group%20672.png" alt=""> -->
         </div>
             </div>
        <div class="container" id="bot">
@@ -173,15 +183,15 @@
             <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod. Lorem ipsum <br> dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod</p>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 phn-4" style="background-image: url('/static/images/651.png');">
-          <img src="{{ url_for('static', filename='images/homepage.png') }}" alt="">
-            <!-- <img src="images/homepage.png" src=""> -->
+            <img src="{{ url_for('static', filename='images/homepage.png') }}" alt="">
+             <!-- <img src="static/images/homepage.png" src=""> -->
         </div>
             </div>
             </div>
         </div>
         
         <!------------------------------------------------------------------------------------------------------>
-             <div class="container-fluid tenth-sec">
+             <div class="container-fluid tenth-sec" id="team">
              <div class="container">
                  <div class="row">
                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 blog-1">
@@ -192,8 +202,8 @@
              </div>
              <!--------------------------------------------------------------------------------------->
              <div class="dot-8">
-              <img src="{{ url_for('static', filename='images/Group 671.png') }}" alt="">
-             <!-- <img src="images/Group%20671.png" alt=""> -->
+             <img src="{{ url_for('static', filename='images/Group 671.png') }}" alt="">
+             <!-- <img src="static/images/Group%20671.png" alt=""> -->
              </div>
         <!-------------------------------------------------------------------------------------------------------------->
              <div class="container-fluid eleventh-sec">
@@ -203,7 +213,7 @@
                   <div class="card shadow" style="width: 20rem;">
                     <div class="card" style="width: 280px; margin-top: 20px;left: 20px;">
                     <img src="{{ url_for('static', filename='images/Mask Group (13).png') }}">
-                    <!-- <img src="images/Mask%20Group%20(13).png" class="card-img-top" alt="..."> -->
+                    <!-- <img src="static/images/Mask%20Group%20(13).png" class="card-img-top" alt="..."> -->
                   </div>
                   
                     <div class="card-body">
@@ -218,7 +228,7 @@
                    <div class="card shadow" style="width: 20rem;">
                     <div class="card" style="width: 280px; margin-top: 20px;left: 20px;">
                     <img src="{{ url_for('static', filename='images/Mask Group (13).png') }}" alt="">
-                    <!-- <img src="images/Mask%20Group%20(13).png" class="card-img-top" alt="..."> -->
+                    <!-- <img src="static/images/Mask%20Group%20(13).png" class="card-img-top" alt="..."> -->
                     </div>
                     <div class="card-body">
                       <p>Lorem ipsum dolor sit amet</p>
@@ -232,10 +242,11 @@
                    <div class="card shadow" style="width: 20rem;">
                     <div class="card" style="width: 280px; margin-top: 20px;left: 20px;">
                     <img src="{{ url_for('static', filename='images/Mask Group (13).png') }}" alt="">
+                    <!-- <img src="static/images/Mask%20Group%20(13).png" class="card-img-top" alt="..."> -->
+                  
                   </div>
                     
-                    <!-- <img src="images/Mask%20Group%20(13).png" class="card-img-top" alt="..."> -->
-                  
+                    
                     <div class="card-body">
                       <p>Lorem ipsum dolor sit amet</p>
                      <span>september 16, 2020</span>
@@ -277,17 +288,17 @@
                      </div> 
                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 dwnld-1">
                    <a href="#"><img src="{{ url_for('static', filename='images/Group 634.png') }}" alt=""></a>
-                  <!-- <a href="#"><img src="images/Group%20634.png" alt=""></a> -->
+                  <!-- <a href="#"><img src="static/images/Group%20634.png" alt=""></a> -->
                   </div> 
                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 dwnld-2">
                         <a href=""><img src="{{ url_for('static', filename='images/Group 636.png') }}" alt=""></a>
-                       <!-- <a href="#"><img src="images/Group%20636.png" alt=""></a> -->
+                       <!-- <a href="#"><img src="static/images/Group%20636.png" alt=""></a> -->
                        </div> 
              </div>
              </div>
             </div>
 <!----------------------------------------------------------------------------------->
-        <div class="container-fluid coni">
+        <div class="container-fluid coni" id="contact">
                <div class="conatiner" id='con'>
                    <h1>Contact Us</h1>
                </div>
